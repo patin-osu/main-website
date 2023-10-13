@@ -1,5 +1,3 @@
-feather.replace();
-
 window.addEventListener('load', function () {
     setTimeout(function () {
         const loadingScreen = document.querySelector('.loading-screen');
