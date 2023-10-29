@@ -1,0 +1,215 @@
+﻿Diagnose log at 2023-10-29T03:38:15Z
+
+AppPath: /usr/bin/git-credential-manager
+InstallDir: /usr/lib/share/git-credential-manager-core/
+Version: 2.3.2
+
+------------
+Diagnostic: Environment
+Skipped: False
+Success: True
+Exception: None
+Log:
+OSType: Linux
+OSVersion: Manjaro Linux
+Reading environment variables... OK
+ Variables:
+LESS_TERMCAP_se=[0m
+KDE_APPLICATIONS_AS_SCOPE=1
+KDE_SESSION_VERSION=5
+SESSION_MANAGER=local/PATIN-WS:@/tmp/.ICE-unix/817,unix/PATIN-WS:/tmp/.ICE-unix/817
+XDG_CURRENT_DESKTOP=KDE
+SHELL=/bin/bash
+JOURNAL_STREAM=8:15758
+TERM=xterm-256color
+QT_WAYLAND_FORCE_DPI=96
+GIT_TRACE2_PARENT_SID=a9619135-61a1-45ad-a0e9-ef485335a39e
+LANGUAGE=
+LC_TELEPHONE=en_US.UTF-8
+LESS_TERMCAP_md=[01;32m
+MANGOHUD=1
+SHLVL=1
+LESS_TERMCAP_ue=[0m
+DEBUGINFOD_URLS=https://debuginfod.archlinux.org
+GTK_RC_FILES=/etc/gtk/gtkrc:/home/patin/.gtkrc:/home/patin/.config/gtkrc
+LESS_TERMCAP_mb=[01;32m
+LC_TIME=en_US.UTF-8
+XDG_SESSION_ID=2
+XDG_CONFIG_DIRS=/home/patin/.config/kdedefaults:/etc/xdg:/usr/share/manjaro-kde-settings/xdg
+XDG_ACTIVATION_TOKEN=kwin-75
+LC_MEASUREMENT=en_US.UTF-8
+LESS_TERMCAP_me=[0m
+USER=patin
+LESS_TERMCAP_so=[01;47;34m
+_P9K_SSH_TTY=/dev/pts/2
+MEMORY_PRESSURE_WRITE=c29tZSAyMDAwMDAgMjAwMDAwMAA=
+LC_NUMERIC=en_US.UTF-8
+LESS_TERMCAP_us=[01;36m
+KDE_SESSION_UID=1000
+DISPLAY=:1
+P9K_TTY=old
+MANAGERPID=703
+MOTD_SHOWN=pam
+OLDPWD=/mnt/patinsecdrive/Development/main-website
+KONSOLE_DBUS_WINDOW=/Windows/1
+MEMORY_PRESSURE_WATCH=/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/plasma-plasmashell.service/memory.pressure
+XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session1
+XCURSOR_THEME=Adwaita
+DESKTOP_SESSION=plasmawayland
+PROFILEHOME=
+MOZ_ENABLE_WAYLAND=1
+COLORFGBG=15;0
+XDG_DATA_DIRS=/home/patin/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+XAUTHORITY=/run/user/1000/xauth_tlUoum
+LS_OPTIONS=--color=auto
+LC_PAPER=en_US.UTF-8
+XCURSOR_SIZE=24
+WAYLAND_DISPLAY=wayland-0
+XDG_SESSION_CLASS=user
+LC_ADDRESS=en_US.UTF-8
+HOME=/home/patin
+LC_MONETARY=en_US.UTF-8
+P9K_SSH=0
+LC_NAME=en_US.UTF-8
+QT_AUTO_SCREEN_SCALE_FACTOR=0
+SYSTEMD_EXEC_PID=850
+LOGNAME=patin
+WINDOWID=1
+PAM_KWALLET5_LOGIN=/run/user/1000/kwallet5.socket
+KONSOLE_VERSION=230801
+GTK2_RC_FILES=/etc/gtk-2.0/gtkrc:/home/patin/.gtkrc-2.0:/home/patin/.config/gtkrc-2.0
+LESS=-R
+QT_LINUX_ACCESSIBILITY_ALWAYS_ON=1
+KONSOLE_DBUS_SESSION=/Sessions/1
+KDE_FULL_SESSION=true
+INVOCATION_ID=58ba0cfa9f05414faf08dbc40ba2e7e9
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+XKB_DEFAULT_LAYOUT=us
+XDG_RUNTIME_DIR=/run/user/1000
+KONSOLE_DBUS_SERVICE=:1.255
+XDG_SESSION_DESKTOP=KDE
+XDG_VTNR=1
+PWD=/mnt/patinsecdrive/Development/main-website
+_=/usr/bin/git-credential-manager
+SHELL_SESSION_ID=7a4cab9cd3b345b586b97beabb6f48f2
+QSG_RENDER_LOOP=basic
+XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+_P9K_TTY=/dev/pts/2
+XDG_SESSION_TYPE=wayland
+PLASMA_USE_QT_SCALING=1
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:
+XDG_SEAT=seat0
+COLORTERM=truecolor
+LANG=en_US.UTF-8
+LC_IDENTIFICATION=en_US.UTF-8
+MAIL=/var/spool/mail/patin
+PATH=/home/patin/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+
+
+------------
+Diagnostic: File system
+Skipped: False
+Success: True
+Exception: None
+Log:
+Temporary directory is '/tmp/'...
+Checking basic file I/O...
+Writing to temporary file '/tmp/a3fd4e59b4aeb8199cc977ec'... OK
+Reading from temporary file '/tmp/a3fd4e59b4aeb8199cc977ec'... OK
+Deleting temporary file '/tmp/a3fd4e59b4aeb8199cc977ec'... OK
+Testing IFileSystem instance...
+UserHomePath: /home/patin
+UserDataDirectoryPath: /home/patin/.gcm
+GetCurrentDirectory(): /mnt/patinsecdrive/Development/main-website
+
+------------
+Diagnostic: Networking
+Skipped: False
+Success: True
+Exception: None
+Log:
+Checking networking and HTTP stack...
+Creating HTTP client... OK
+IsNetworkAvailable: True
+Sending HEAD request to http://example.com...Sending HEAD request to https://example.com... OK
+ OK
+Acquiring free TCP port... OK
+Testing local HTTP loopback connections...
+Creating new HTTP listener for http://localhost:42447/... OK
+Waiting for loopback connection... OK
+Writing response... OK
+Waiting for response data... OK
+Loopback connection data OK
+
+------------
+Diagnostic: Git
+Skipped: False
+Success: True
+Exception: None
+Log:
+Getting Git version... OK
+Git version is '2.42.0'
+Locating current repository... OK
+Git repository at '/mnt/patinsecdrive/Development/main-website/.git'
+Listing all Git configuration... OK
+Git configuration:
+file:/home/patin/.gitconfig	safe.directory=/mnt/patinsecdrive/
+file:/home/patin/.gitconfig	safe.directory=/mnt/patinsecdrive/Development/main-website
+file:/home/patin/.gitconfig	user.email=patin@patin.dev
+file:/home/patin/.gitconfig	user.name=Patin Muangjan
+file:/home/patin/.gitconfig	credential.credentialstore=gpg
+file:/home/patin/.gitconfig	credential.helper=
+file:/home/patin/.gitconfig	credential.helper=/usr/bin/git-credential-manager
+file:/home/patin/.gitconfig	credential.https://dev.azure.com.usehttppath=true
+file:.git/config	core.repositoryformatversion=0
+file:.git/config	core.filemode=true
+file:.git/config	core.bare=false
+file:.git/config	core.logallrefupdates=true
+file:.git/config	remote.origin.url=https://github.com/patin-osu/main-website.git
+file:.git/config	remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+file:.git/config	branch.experimental.remote=origin
+file:.git/config	branch.experimental.merge=refs/heads/experimental
+file:.git/config	branch.main.remote=origin
+file:.git/config	branch.main.merge=refs/heads/main
+
+
+------------
+Diagnostic: Credential storage
+Skipped: False
+Success: True
+Exception: None
+Log:
+ICredentialStore instance is of type: CredentialStore
+Writing test credential... OK
+Reading test credential... OK
+Deleting test credential... OK
+
+------------
+Diagnostic: Microsoft authentication (AAD/MSA)
+Skipped: False
+Success: True
+Exception: None
+Log:
+Broker is not enabled.
+Flow type is: Auto
+Gathering MSAL token cache data... OK
+CacheDirectory: /home/patin/.local/.IdentityService
+CacheFileName: msal.cache
+CacheFilePath: /home/patin/.local/.IdentityService/msal.cache
+KeyringCollection: 
+KeyringSchemaName: 
+KeyringSecretLabel: 
+KeyringAttribute1: (,)
+KeyringAttribute2: (,)
+Creating cache helper... OK
+Verifying MSAL token cache persistence... OK
+
+------------
+Diagnostic: GitHub API
+Skipped: False
+Success: True
+Exception: None
+Log:
+Using 'https://github.com/' as API target.
+Querying '/meta' endpoint... OK
+
