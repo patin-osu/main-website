@@ -10,7 +10,7 @@ body{
     height: 100%;
     background-color: black;
 }
-.loading-screen {
+.loading-screen{
     position: fixed;
     top: 0;
     left: 0;
@@ -25,11 +25,11 @@ body{
     transition: opacity 1.5s ease;
     opacity: 1;
 }
-.loading-screen.fade-out {
+.loading-screen.fade-out{
     opacity: 0;
     pointer-events: none;
 }
-.loading-screen img {
+.loading-screen img{
     max-width: 100%;
     max-height: 100%;
 }
@@ -70,7 +70,7 @@ body{
 .parallax-container .content .button-container{
     text-align: center;
 }
-.parallax-container .content .button {
+.parallax-container .content .button{
     display: inline-block;
     padding: 10px 10px;
     background-color: #333;
@@ -80,7 +80,7 @@ body{
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-.parallax-container .content .button:hover {
+.parallax-container .content .button:hover{
     background-color: #0056b3;
 }
 .parallax-container .footer{
