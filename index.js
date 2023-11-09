@@ -1,19 +1,22 @@
-window.addEventListener('load', function () {
-    setTimeout(function () {
-        const loadingScreen = document.querySelector('.loading-screen');
-        loadingScreen.classList.add('fade-out');
-    }, 100);
-});
+alert('Tap/click anywhere to listen to song')
 
 const parallaxContainer = document.querySelector('.parallax-container');
-const parallaxLayer = document.querySelector('.parallax-layer');
+const parallaxBackgrounds = document.querySelectorAll('.parallax-background');
 
-parallaxContainer.addEventListener('mousemove', (e) => {
-    const x = e.clientX / window.innerWidth;
-    const y = e.clientY / window.innerHeight;
+const parallaxCenterX = parallaxContainer.offsetWidth / 2;
+const parallaxCenterY = parallaxContainer.offsetHeight / 2;
 
-    const xOffset = (x - 0.5) * 20;
-    const yOffset = (y - 0.5) * 20;
+parallaxContainer.addEventListener('mousemove', (event) => {
+    const mouseX = event.pageX;
+    const mouseY = event.pageY;
 
-    parallaxLayer.style.transform = `translate(${xOffset}px, ${yOffset}px) scale(1.1)`;
+    // Calculate parallax offsets relative to the center of the screen
+    for (let i = 0; i < parallaxBackgrounds.length; i++) {
+        const parallaxBackground = parallaxBackgrounds[i];
+
+        const parallaxOffset = (mouseX - parallaxCenterX) / parallaxContainer.offsetWidth;
+        const parallaxOffsetY = (mouseY - parallaxCenterY) / parallaxContainer.offsetHeight;
+
+        parallaxBackground.style.transform = `translate3d(${parallaxOffset * -20}px, ${parallaxOffsetY * -20}px, 0) scale(1.1)`;
+    }
 });
