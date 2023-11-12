@@ -13,4 +13,16 @@
         <div class="parallax-background" style="background-image: url('background.webp')"></div>
     </div>
 </body>
+<script>
+    const soundFile = new Audio('sound.mp3');
+
+const initialVolume = 0.5; // Set the initial volume between 0 and 1
+
+document.addEventListener('click', (event) => {
+    if (event.target === document.body) {
+        // Play the sound when clicking anywhere on the document body
+        soundFile.play();
+    }
+});
+</script>
 </html>
