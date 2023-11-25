@@ -1,40 +1,35 @@
-const parallaxContainer = document.querySelector('.parallax-container');
-const parallaxBackgrounds = document.querySelectorAll('.parallax-background');
-
-const parallaxCenterX = parallaxContainer.offsetWidth / 2;
-const parallaxCenterY = parallaxContainer.offsetHeight / 2;
-
-parallaxContainer.addEventListener('mousemove', (event) => {
-    const mouseX = event.pageX;
-    const mouseY = event.pageY;
-
-    // Calculate parallax offsets relative to the center of the screen
-    for (let i = 0; i < parallaxBackgrounds.length; i++) {
-        const parallaxBackground = parallaxBackgrounds[i];
-
-        const parallaxOffset = (mouseX - parallaxCenterX) / parallaxContainer.offsetWidth;
-        const parallaxOffsetY = (mouseY - parallaxCenterY) / parallaxContainer.offsetHeight;
-
-        parallaxBackground.style.transform = `translate3d(${parallaxOffset * -20}px, ${parallaxOffsetY * -20}px, 0) scale(1.1)`;
-    }
-});
-
-const soundFile = new Audio('zenith.mp3');
-
-const initvol = 0.5; // Set the initial volume between 0 and 1
-
-document.addEventListener('click', (event) => {
-    if (event.target === document.body) {
-        // Play the sound when clicking anywhere on the document body
-        soundFile.play();
-    }
-});
-
-document.addEventListener('mousewheel', (event) => {
-    const delta = event.deltaY / 120; // Calculate the scroll wheel delta
-
-    let newVolume = initvol + delta;
-    newVolume = Math.max(0, Math.min(1, newVolume)); // Clamp the volume between 0 and 1
-
-    soundFile.volume = newVolume;
-});
+document.addEventListener("click", function(event) {
+    // Create snowflake element
+    var snowflake = document.createElement("div");
+    snowflake.className = "snowflake";
+    snowflake.style.left = event.clientX + "px";
+    snowflake.style.top = "0";
+    document.getElementById("snowContainer").appendChild(snowflake);
+  
+    // Animate snowflake falling down
+    var animationDuration = Math.random() * 3 + 2; // Duration between 2 to 5 seconds
+    snowflake.style.transition = "top " + animationDuration + "s linear";
+    snowflake.style.top = window.innerHeight + "px";
+  
+    // Remove snowflake after animation ends
+    snowflake.addEventListener("transitionend", function() {
+      snowflake.remove();
+    });
+  });
+  
+  // Continuous falling effect
+  setInterval(function() {
+    var snowflake = document.createElement("div");
+    snowflake.className = "snowflake";
+    snowflake.style.left = Math.random() * window.innerWidth + "px";
+    snowflake.style.top = "0";
+    document.getElementById("snowContainer").appendChild(snowflake);
+  
+    var animationDuration = Math.random() * 3 + 2; // Duration between 2 to 5 seconds
+    snowflake.style.transition = "top " + animationDuration + "s linear";
+    snowflake.style.top = window.innerHeight + "px";
+  
+    snowflake.addEventListener("transitionend", function() {
+      snowflake.remove();
+    });
+  }, 500); // Create new snowflake every 0.5 seconds

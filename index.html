@@ -1,28 +1,17 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parallax Website</title>
+    <title>Patin - DDD</title>
     <link rel="stylesheet" href="index.css">
-    <script src="index.js" defer></script>
 </head>
 <body>
-    <div class="parallax-container">
-        <div class="parallax-background" style="background-image: url('background.webp')"></div>
-    </div>
+    <!--Music Stuff (Thanks, Nekodex!)-->
+        <audio id="backgroundMusic" src="sound.mp3" type="audio/mpeg"></audio>
+        <div id="snowContainer"></div>
+    <!--Stuff actually start here-->
+
 </body>
-<script>
-    const soundFile = new Audio('sound.mp3');
-
-const initialVolume = 0.5; // Set the initial volume between 0 and 1
-
-document.addEventListener('click', (event) => {
-    if (event.target === document.body) {
-        // Play the sound when clicking anywhere on the document body
-        soundFile.play();
-    }
-});
-</script>
+<script src="index.js" defer></script>
 </html>
