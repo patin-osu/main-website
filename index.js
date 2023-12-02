@@ -17,3 +17,7 @@ parallaxContainer.addEventListener('mousemove', (e) => {
 
     parallaxLayer.style.transform = `translate(${xOffset}px, ${yOffset}px) scale(1.1)`;
 });
+
+function notallowfordownload(){
+    alert("Not available for Download");
+}
