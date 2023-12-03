@@ -26,6 +26,11 @@
   text-align: center;
 }
 
+.container .content .nav{
+  display: grid;
+  padding: 10px;
+}
+
 .container .content h1{
   font-size: 30px;
   color: white;
@@ -38,10 +43,17 @@
 
 .container .content .button{
   display: inline-block;
-  padding: 10px 10px;
+  padding: 10px 80px;
+  margin: 2px;
   background-color: #333;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.container .content .button:hover{
+  background-color: aquamarine;
+  backdrop-filter: blur(50px);
 }

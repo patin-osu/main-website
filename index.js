@@ -7,10 +7,10 @@ playButton.addEventListener('click', function() {
   if (audioPlayer.paused || audioPlayer.ended) {
     // Play the audio
     audioPlayer.play();
-    playButton.textContent = 'nekodex - aureole'; // Update button text to 'Pause'
+    playButton.textContent = 'Pause!';
   } else {
     // Pause the audio
     audioPlayer.pause();
-    playButton.textContent = 'Play a song'; // Update button text to 'Play a song'
+    playButton.textContent = 'Play!';
   }
 });
