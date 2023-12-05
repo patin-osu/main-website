@@ -54,6 +54,18 @@
 }
 
 .container .content .button:hover{
-  background-color: aquamarine;
-  backdrop-filter: blur(50px);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 44%, rgba(0,212,255,1) 85%);
+}
+
+.container .credit {
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.container .credit p {
+  color: #fff;
+  margin: 5px;
 }
