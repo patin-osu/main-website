@@ -1,107 +1,86 @@
 *{
-    margin: 0;
-    padding: 0;
-    font-family: 'Kanit', sans-serif;
-    color: white;
-    overflow: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: 'Exo 2', sans-serif;
+  overflow: hidden;
 }
-
 body{
-    height: 100%;
-    background-color: black;
-}
-.loading-screen{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    backdrop-filter: blur(100px);
-    -webkit-backdrop-filter: blur(100px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-    transition: opacity 1.5s ease;
-    opacity: 1;
-}
-.loading-screen.fade-out{
-    opacity: 0;
-    pointer-events: none;
-}
-.loading-screen img{
-    max-width: 100%;
-    max-height: 100%;
-}
-.parallax-container{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-}
-.parallax-layer{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: url('background.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    filter: blur(3px) brightness(70%);
-    -webkit-filter: blur(3px) brightness(70%);
-    transition: ease 0.1s;
-    z-index: -1;
-}
-.parallax-container .content{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-.parallax-container .content img{
-    border-radius: 130px;
-    width: 130px;
-}
-.parallax-container .content i{
-    text-decoration: none;
-    font-size: 23px;
-    margin: 2px;
-    padding-bottom: 6px;
-}
-.parallax-container .content .button-container{
-    text-align: center;
-}
-.parallax-container .content .button{
-    display: inline-block;
-    padding: 10px 10px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-.parallax-container .content .button:hover{
-    background-color: #0056b3;
-}
-.parallax-container .footer{
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-.parallax-container .footer p{
-    margin: 0;
-}
-.parallax-container .footer a{
-    text-decoration: none;
+  background-color: black;
 }
 
-@media (max-width: 768px){
-    *{
-        white-space: nowrap;
-    }
-    .parallax-container .content h1{
-      font-size: 25px;
-    }
+.background {
+  background-image: url('background.webp');
+  background-position: center;
+  background-size: cover;
+  filter: blur(8px) brightness(70%);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: scale(1.1);
+}
+
+#fireworksCanvas{
+  z-index: 9999;
+}
+
+.container .content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container .content .nav{
+  display: grid;
+  padding: 10px;
+}
+
+.container .content h1{
+  font-size: 30px;
+  color: white;
+}
+
+.container .content img{
+  width: 130px;
+  border-radius: 50%;
+}
+
+.container .content .button{
+  padding: 10px 80px;
+  margin: 2px;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: ease 0.3s;
+  background-color: #fff;
+}
+
+.container .content .button:hover{
+  color: #fff;
+  background: #3c6b88;
+}
+
+.container .credit {
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.container .credit p {
+  color: #fff;
+  margin: 5px;
+}
+
+#refresh-config {
+  bottom: 5px;
+  left: 5px;
+  position: fixed;
+  z-index: 1000;
 }
