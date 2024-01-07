@@ -22,10 +22,6 @@ body{
   transform: scale(1.1);
 }
 
-#fireworksCanvas{
-  z-index: 9999;
-}
-
 .container .content{
   position: absolute;
   top: 50%;
@@ -78,9 +74,12 @@ body{
   margin: 5px;
 }
 
-#refresh-config {
-  bottom: 5px;
-  left: 5px;
-  position: fixed;
-  z-index: 1000;
+.container .credit a {
+  color: #fff;
+  text-decoration: none;
+  transition: ease  0.3s;
+}
+
+.container .credit a:hover {
+  color: #35bf5d;
 }
