@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
   font-family: 'Exo 2', sans-serif;
+  overflow: hidden;
+}
+body{
+  background-color: black;
 }
 
 .background {
@@ -16,6 +20,10 @@
   left: 0;
   z-index: -1;
   transform: scale(1.1);
+}
+
+#fireworksCanvas{
+  z-index: 9999;
 }
 
 .container .content{
@@ -38,23 +46,23 @@
 
 .container .content img{
   width: 130px;
-  border-radius: 100%;
+  border-radius: 50%;
 }
 
 .container .content .button{
-  display: inline-block;
   padding: 10px 80px;
   margin: 2px;
-  background-color: #333;
-  color: #fff;
+  color: #000000;
   text-decoration: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: 0.3s ease;
+  transition: ease 0.3s;
+  background-color: #fff;
 }
 
 .container .content .button:hover{
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 44%, rgba(0,212,255,1) 85%);
+  color: #fff;
+  background: #3c6b88;
 }
 
 .container .credit {
@@ -68,4 +76,11 @@
 .container .credit p {
   color: #fff;
   margin: 5px;
+}
+
+#refresh-config {
+  bottom: 5px;
+  left: 5px;
+  position: fixed;
+  z-index: 1000;
 }
